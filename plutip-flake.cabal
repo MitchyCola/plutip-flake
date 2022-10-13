@@ -1,0 +1,20 @@
+cabal-version:      2.4
+name:               plutip-flake
+version:            0.1.0.0
+
+executable plutip-flake
+    main-is:          Main.hs
+    build-depends:    
+      , base ^>=4.14.3.0
+      , containers
+      , lens
+      , plutip
+      , plutus-contract
+      , plutus-ledger
+      , plutus-ledger-constraints
+      , plutus-pab
+      , tasty
+      , text
+    hs-source-dirs:   app
+    default-language: Haskell2010
+    ghc-options:   -Wall -threaded -rtsopts
